@@ -19,4 +19,12 @@
   (is (= '(+ 1 1) (:produce p))))
 
 
+(deftest dofile-parsing
+  (var env {})
+  (with-dyns [:syspath "build"]
+    (set env (dofile "test/test.claret" {:env {}})))
+  (def expect {:source-map '("test/test.claret" 1 1) :value 5})
+  (is (== expect (get env 'x))))
+
+
 (run-tests!)
