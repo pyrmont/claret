@@ -19,7 +19,7 @@
 
 
 (declare-native
-  :name "claret-parser"
+  :name "claret-syntax"
   :cflags cflags
   :lflags lflags
   :headers ["src/claret/parser.h"]
