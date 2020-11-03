@@ -1,2 +1,14 @@
 #syntax claret
-(def x 5)
+(def num 5)
+
+(def tuple [1, 2, 3])
+
+(def string "abc")
+
+(def empty-string "")
+
+(def longstring """abc""")
+
+(def buffer !"abc")
+
+(def function #(print "Hello world"))
